@@ -25,3 +25,11 @@ clear
 echo -e "\033[32mInstalling Xubuntu-Modded\033[0m"
 proot-distro restore /sdcard/Download/xubuntu-modded-backup.tar.gz
 clear
+wget -P /data/data/com.termux/files/usr/bin https://github.com/ubuntu-termux-by-lukeyt/Xubuntu-Modded/raw/refs/heads/main/commands/xubuntu-modded
+wget -P /data/data/com.termux/files/usr/bin https://github.com/ubuntu-termux-by-lukeyt/Xubuntu-Modded/raw/refs/heads/main/commands/xubuntu-modded-x11
+chmod +x /data/data/com.termux/files/usr/bin/xubuntu-modded
+chmod +x /data/data/com.termux/files/usr/bin/xubuntu-modded-x11
+clear
+echo -e "\e[32mDone! You're done!\e[0m"
+echo -e "\e[32mYou can login to Xubuntu Modded by command: xubuntu-modded\e[0m"
+echo -e "\e[31mOr you can run desktop by command: xubuntu-modded-x11\e[0m"
