@@ -17,13 +17,13 @@ echo -e "\033[32mAllowing External Storage\033[0m"
 termux-setup-storage
 sleep 10
 clear
-termux-open https://drive.google.com/file/d/1HGQoSqIM0C67zxRjATCulmRvHpzBIyFy/view?usp=drivesdk
+wget https://github.com/ubuntu-termux-by-lukeyt/Xubuntu-Modded/releases/download/Xubuntu-Modded-Rootfs/xubuntu-modded-backup.tar.gz
 clear
 echo -e "\033[32mWait for free hours\033[0m"
 sleep 1000
 clear
 echo -e "\033[32mInstalling Xubuntu-Modded\033[0m"
-proot-distro restore /sdcard/Download/xubuntu-modded-backup.tar.gz
+proot-distro restore ./xubuntu-modded-backup.tar.gz
 clear
 wget -P /data/data/com.termux/files/usr/bin https://github.com/ubuntu-termux-by-lukeyt/Xubuntu-Modded/raw/refs/heads/main/commands/xubuntu-modded
 wget -P /data/data/com.termux/files/usr/bin https://github.com/ubuntu-termux-by-lukeyt/Xubuntu-Modded/raw/refs/heads/main/commands/xubuntu-modded-x11
