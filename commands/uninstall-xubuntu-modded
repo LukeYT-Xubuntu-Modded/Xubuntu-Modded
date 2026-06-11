@@ -1,0 +1,10 @@
+clear
+echo Wait for 10 seconds to uninstall Xubuntu Modded
+sleep 10
+clear
+echo -e "\033[34mUninstalling Xubuntu Modded\033[0m"
+proot-distro remove xubuntu-modded
+rm /data/data/com.termux/files/usr/bin/xubuntu-modded
+rm /data/data/com.termux/files/usr/bin/xubuntu-modded-x11
+clear
+echo -e "\033[32mDone!\033[0m"
